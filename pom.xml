@@ -8,11 +8,19 @@
     <artifactId>website</artifactId>
     <packaging>pom</packaging>
     <version>0.1-SNAPSHOT</version>
+
+    <properties>
+        <dist.finalName>READY_TO_DEPLOY</dist.finalName>
+        <dist.finalDirectory>../deploy_this</dist.finalDirectory>
+    </properties>
+    
     <modules>
         <module>backend</module>
         <module>frontend</module>
     </modules>
     <build>
+        <directory>${dist.finalDirectory}</directory>
+        <finalName>${dist.finalName}</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>

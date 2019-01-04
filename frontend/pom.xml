@@ -82,7 +82,7 @@
                 <configuration>
                     <webResources>
                         <resource>
-                            //copy the files in the dist directory
+                            <!--//copy the files in the dist directory-->
                             <directory>dist</directory>
                             <targetPath>/</targetPath>
                         </resource>
